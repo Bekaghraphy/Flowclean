@@ -1,120 +1,216 @@
-body {
+/* RESET */
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background: #05172b;
-    color: #fff;
 }
 
-/* NAV */
-.header {
+body{
+    background: #03101f;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.header{
     width: 100%;
-    padding: 25px 60px;
+    padding: 25px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
-.logo {
-    width: 80px;
+
+.logo{
+    width: 110px;
 }
-.nav a {
-    margin: 0 20px;
+
+.nav a{
     color: #fff;
     text-decoration: none;
+    margin: 0 20px;
     font-size: 15px;
+    position: relative;
     transition: 0.3s;
 }
-.nav a:hover {
-    color: #66b5ff;
-    text-shadow: 0 0 8px #66b5ff;
+
+/* وميض الهيدر */
+.nav a:hover{
+    color: #d8b97a;
 }
 
-/* HERO */
-.hero-section {
+/* HERO SECTION */
+.hero{
+    width: 100%;
     position: relative;
-    width: 100%;
-}
-.hero-bg {
-    width: 100%;
-    display: block;
-    object-fit: cover;
 }
 
-/* SECTION 2 */
-.who-section {
-    width: 100%;
-    background: #0d2340;
-}
-
-.who-image img {
+.hero-bg{
     width: 100%;
     display: block;
 }
 
-/* CONTENT */
-.who-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 30px;
-    text-align: left;
-}
-
-.who-title {
-    font-size: 55px;
-    margin: 0 0 20px 0;
-}
-.who-title span {
-    font-weight: 700;
+/* فريم وهيرو النص */
+.text-box{
+    position: absolute;
+    top: 22%;
+    right: 10%;
+    width: 380px;
     color: #fff;
 }
 
-.who-headline {
-    font-size: 26px;
+.text-box h2{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.text-box h1{
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.readmore{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.desc{
+    margin-top: 15px;
+    opacity: 0.9;
+    font-size: 14px;
     line-height: 1.6;
-    font-weight: 600;
+}
+
+.watch-btn{
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+/* BOT FLOAT */
+#bot{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 110px;
+    animation: botFloat 3s ease-in-out infinite;
+}
+
+@keyframes botFloat{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-10px); }
+    100%{ transform: translateY(0); }
+}
+
+/* text animation */
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.fade-in-2{
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+    animation-delay: .4s;
+}
+
+@keyframes fadeIn{
+    0%{ opacity: 0; transform: translateY(40px); }
+    100%{ opacity: 1; transform: translateY(0); }
+}
+
+/* =======================================
+   SECTION 2
+======================================= */
+
+.who-section{
+    position: relative;
+    width: 100%;
+    margin-top: -4px;
+}
+
+.who-bg{
+    width: 100%;
+    display: block;
+}
+
+.who-content{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0 120px 0;
+    color: #fff;
+}
+
+.who-title{
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.who-title span{
+    font-weight: 900;
+}
+
+.who-main{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 900px;
     margin-bottom: 25px;
 }
 
-.who-text {
-    font-size: 15px;
-    opacity: 0.8;
+.who-sub{
+    font-size: 17px;
+    opacity: .85;
+    max-width: 900px;
     line-height: 1.7;
     margin-bottom: 40px;
 }
 
-/* Buttons */
-.btn {
-    padding: 12px 30px;
-    background: #ffffff;
-    color: #000;
-    border-radius: 6px;
-    text-decoration: none;
-    margin-right: 20px;
+.who-buttons{
+    display: flex;
+    gap: 20px;
 }
-.btn-outline {
+
+.btn-white{
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-link{
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    opacity: .85;
 }
 
-/* Animation */
-.fade-in {
-    animation: fadeIn 1.3s ease forwards;
-    opacity: 0;
+.btn-link:hover{
+    opacity: 1;
 }
-@keyframes fadeIn {
-    0%   { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
+
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-    .who-title { font-size: 40px; }
-    .who-headline { font-size: 20px; }
+@media (max-width: 900px){
+    .text-box{ right: 5%; width: 90%; }
+    #bot{ width: 80px; right: 20px; bottom: 20px; }
+    .who-content{ width: 90%; }
+    .who-title{ font-size: 40px; }
 }
 
-@media (max-width: 600px) {
-    .header { flex-direction: column; padding: 20px; }
-    .nav a { margin: 0 10px; }
-    .who-content { padding: 35px 20px; }
-    .who-title { font-size: 34px; }
+@media (max-width: 600px){
+    .who-title{ font-size: 32px; }
+    .who-main{ font-size: 22px; }
+    .who-sub{ font-size: 15px; }
 }
