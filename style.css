@@ -3,15 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: url("img/homebg.jpg") no-repeat center center/cover;
-  width: 100%;
+  background: #0d1b2a;   /* خلفية بسيطة */
   height: 100vh;
-  overflow-x: hidden;
   color: white;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -23,8 +22,10 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  width: 110px;
+.logo-box {
+  background: #ffffff22;
+  padding: 10px 20px;
+  border-radius: 6px;
 }
 
 nav {
@@ -38,45 +39,36 @@ nav a {
   font-size: 15px;
 }
 
-
-/* === TEXT EXACT POSITION === */
+/* RIGHT CONTENT */
 .content {
   position: absolute;
-  top: 150px;     /* ارفع وانزل زي ما تحب */
-  right: 140px;   /* حرك النص يمين/شمال */
+  top: 150px;
+  right: 140px;
   width: 420px;
 }
 
-/* TITLE 1 */
 .title-1 {
   font-size: 38px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-/* TITLE 2 */
 .title-2 {
   font-size: 34px;
   font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-/* Read More */
 .readmore {
-  font-size: 16px;
   margin-bottom: 15px;
 }
 
-/* Paragraph */
 .desc {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 25px;
-  width: 90%;
 }
 
-/* BUTTON */
 .btn-primary {
   background: white;
   color: black;
@@ -86,11 +78,12 @@ nav a {
   cursor: pointer;
 }
 
-
 /* BOT */
-.flobot {
+.bot {
   position: fixed;
   bottom: 40px;
-  right: 55px;
-  width: 120px;
+  right: 40px;
+  padding: 15px 20px;
+  background: #ffffff22;
+  border-radius: 10px;
 }
