@@ -177,3 +177,132 @@ nav a:hover::after {
         display: none; /* للفريم بس على الموبايل */
     }
 }
+/* ============================================================
+   SECTION 2 – WHO WE ARE
+   ============================================================ */
+
+.who-section {
+    width: 100%;
+    background: url("img/section2bg.jpg") no-repeat center top / cover;
+    padding: 180px 0 200px 0;
+    margin-top: -5px; /* يخلّي السيكشن ملتحم باللي فوق بالمللي */
+}
+
+/* TEXT CONTAINER */
+.who-container {
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    animation: whoFade 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@keyframes whoFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TITLE */
+.who-title {
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.who-title span {
+    font-weight: 900;
+}
+
+/* MAIN PARAGRAPH */
+.who-main {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+/* SUB PARAGRAPH */
+.who-sub {
+    font-size: 18px;
+    max-width: 900px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+/* BUTTONS AREA */
+.who-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn-primary {
+    padding: 12px 35px;
+    border-radius: 30px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-link {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity .3s;
+}
+
+.btn-link:hover {
+    opacity: 1;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+@media (max-width: 1200px) {
+    .who-container {
+        width: 85%;
+    }
+    .who-title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .who-title {
+        font-size: 42px;
+    }
+    .who-main {
+        font-size: 24px;
+    }
+    .who-sub {
+        font-size: 16px;
+    }
+    .who-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .who-section {
+        padding: 150px 0 150px 0;
+        background-position: center 0;
+    }
+    .who-title {
+        font-size: 36px;
+    }
+    .who-main {
+        font-size: 20px;
+    }
+}
+
