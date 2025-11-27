@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Flowclean</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- LOGO -->
-    <img src="img/logo left.png" alt="Logo" class="logo">
-
     <!-- NAVIGATION -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Service</a>
-        <a href="#">Flow Academy</a>
-        <a href="#">Contact Us</a>
-    </nav>
+    <header class="header">
+        <img src="img/logo-left.png" class="logo" alt="Flow Logo">
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Service</a>
+            <a href="#">Flow Academy</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
 
-    <!-- GLOW FRAME LAYER (لا يلمس الصورة - مجرد Layer) -->
-    <div class="frame-glow"></div>
+    <!-- HERO BACKGROUND -->
+    <section class="hero-section">
+        <img src="img/homebg.jpg" class="hero-bg" alt="">
+    </section>
 
-    <!-- TEXT BOX -->
-    <div class="text-box">
-        <h2>Solutions and Services</h2>
-        <h1>Healthcare Turnkey<br>Solutions</h1>
-
-        <p class="readmore">Read More →</p>
-
-        <p class="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.
-        </p>
-
-        <button class="watch-btn">Watch Reel</button>
-    </div>
-
-    <!-- BOT -->
-    <img id="bot" src="img/flobot.png" alt="bot">
-    <!-- SECTION 2 – WHO WE ARE -->
-<section class="who-section">
-
-    <div class="who-container">
-
-        <h1 class="who-title"><span>Who</span> we are…</h1>
-
-        <p class="who-main">
-            We're more than just a service provider—we're your dedicated partner
-            in revolutionizing healthcare delivery.
-        </p>
-
-        <p class="who-sub">
-            We hold a visionary belief in a future where healthcare and well-being flourish for all.
-            Our unwavering commitment to excellence and compassionate care drives us to pave the
-            way for a healthier tomorrow rooted in innovations, collaborations, and customer-centered values.
-        </p>
-
-        <div class="who-buttons">
-            <button class="btn-primary">Ask bot</button>
-            <a href="#" class="btn-link">More to know →</a>
+    <!-- SECTION 2: WHO WE ARE -->
+    <section class="who-section">
+        <div class="who-image">
+            <img src="img/section2home.jpg" alt="">
         </div>
 
-    </div>
+        <div class="who-content fade-in">
+            <h2 class="who-title"><span>Who</span> we are…</h2>
 
-</section>
+            <p class="who-headline">
+                We're more than just a service provider—we're your dedicated partner in revolutionizing healthcare delivery.
+            </p>
+
+            <p class="who-text">
+                We hold a visionary belief in a future where healthcare and well-being flourish for all.
+                Our unwavering commitment to excellence and compassionate care drives us to pave the way
+                for a healthier tomorrow rooted in innovations, collaborations, and customer-centered values.
+            </p>
+
+            <div class="who-buttons">
+                <a class="btn" href="#">Ask bot</a>
+                <a class="btn-outline" href="#">More to know →</a>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
