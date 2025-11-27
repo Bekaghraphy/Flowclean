@@ -191,6 +191,102 @@
         .section2 .sub-text { width: 85%; font-size: 15px; }
         nav ul { gap: 25px; }
     }
+/* ===========================
+   RESPONSIVE FIXES
+   =========================== */
+
+@media (max-width: 992px) {
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .section1 {
+        height: auto;
+        padding: 120px 20px 120px 20px;
+        justify-content: center;
+        text-align: center;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .s1-text {
+        width: 100%;
+        max-width: 90%;
+        transform: translateX(0);   /* نلغي الشد لليسار */
+        animation: fadeUp 1.2s ease forwards;
+    }
+
+    .s1-text h1,
+    .s1-text h2,
+    .s1-text p {
+        text-align: center;
+    }
+
+    .section1 button {
+        margin: 20px auto;
+    }
+
+    /* تصغير حجم الكلام */
+    .s1-text h1 {
+        font-size: 32px;
+    }
+    .s1-text h2 {
+        font-size: 26px;
+    }
+    .s1-text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* تحريك البوت لأسفل */
+    .bot {
+        right: 20px;
+        bottom: 20px;
+        transform: scale(0.8);
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .section1 {
+        padding: 100px 10px 120px 10px;
+    }
+
+    .s1-text h1 {
+        font-size: 28px;
+    }
+
+    .s1-text h2 {
+        font-size: 22px;
+    }
+
+    .section1 button {
+        transform: scale(0.95);
+    }
+
+    .bot {
+        right: 10px;
+        bottom: 10px;
+        transform: scale(0.7);
+    }
+}
 
 </style>
 </head>
