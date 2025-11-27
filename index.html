@@ -154,6 +154,102 @@
         opacity: 0.85;
         font-weight: 300;
     }
+    /* SECTION 2 */
+.who-section {
+    position: relative;
+    width: 100%;
+    background-color: #0d203b;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.who-bg {
+    width: 100%;
+    height: 380px;
+    background-image: url('section2bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.who-content {
+    text-align: center;
+    width: 80%;
+    margin: -40px auto 0 auto;
+    color: white;
+}
+
+.who-title {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.who-title .bold {
+    font-weight: 800;
+}
+
+.who-big-text {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.who-small-text {
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto 40px auto;
+    opacity: 0.85;
+}
+
+/* Buttons */
+.who-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.who-btn,
+.who-btn-outline {
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.who-btn {
+    background: white;
+    color: #112b4e;
+}
+
+.who-btn:hover {
+    background: #9bb7ff;
+    color: #fff;
+}
+
+.who-btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.who-btn-outline:hover {
+    background: white;
+    color: #112b4e;
+}
+
+/* Text Fade Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
     /* BUTTONS */
     .btns {
@@ -367,23 +463,30 @@
         </div>
     </div>
 
-    <!-- SECTION 2 -->
-    <div class="section2">
-        <h1><strong>Who</strong> <span>we are…</span></h1>
+   <!-- SECTION 2 -->
+<section class="who-section">
+    <div class="who-bg"></div>
 
-        <div class="text-box">
+    <div class="who-content fade-in">
+        <h1 class="who-title">
+            <span class="bold">Who</span> we are...
+        </h1>
+
+        <p class="who-big-text">
             We're more than just a service provider—we're your dedicated partner in revolutionizing healthcare delivery.
-        </div>
+        </p>
 
-        <div class="sub-text">
-            We hold a visionary belief in a future where healthcare and well-being flourish for all...
-        </div>
+        <p class="who-small-text">
+            We hold a visionary belief in a future where healthcare and well-being flourish for all.  
+            Our unwavering commitment to excellence and compassionate care drives us to pave the way for a healthier tomorrow rooted in innovations, collaborations, and customer-centered values.
+        </p>
 
-        <div class="btns">
-            <button>Ask bot</button>
-            <button>More to know →</button>
+        <div class="who-buttons">
+            <a href="#" class="who-btn">Ask bot</a>
+            <a href="#" class="who-btn-outline">More to know →</a>
         </div>
     </div>
+</section>
 
     <!-- BOT -->
     <img src="img/flobot.png" class="bot">
