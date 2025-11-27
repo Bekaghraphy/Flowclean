@@ -58,11 +58,13 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* TEXT BOX POSITION */
 .text-box {
     position: absolute;
-    top: 22%;
-    right: 10%;
+
+    /* هذه النسب مظبوطة حسب صورتك homebg.jpg بالمللي */
+    top: 24%;    
+    left: 58%;
+
     width: 380px;
 
     opacity: 0;
@@ -70,6 +72,7 @@ nav a:hover::after {
     animation: textAppear 1s ease forwards;
     animation-delay: 0.5s;
 }
+
 
 /* TEXT ANIMATION */
 @keyframes textAppear {
