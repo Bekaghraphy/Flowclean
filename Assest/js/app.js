@@ -80,3 +80,61 @@ input.addEventListener("keypress", (e) => {
     sendBtn.click();
   }
 });
+let knowledgeBase = [];
+let currentScope = "egypt";
+
+// تحميل الداتا
+fetch("assets/data/knowledge.json")
+  .then(res => res.json())
+  .then(data => {
+    knowledgeBase = data;
+  });
+
+// أزرار النطاق
+document.querySelectorAll(".scope button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".scope button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentScope = btn.dataset.scope;
+  });
+});
+
+// البحث في الداتا
+function searchKnowledge(question) {
+  const q = question.toLowerCase();
+
+  return knowledgeBase.find(item =>
+    item.scope === currentScope &&
+    item.keywords.some(k => q.includes(k))
+  );
+}
+
+// عدّل إرسال الرسالة
+sendBtn.addEventListener("click", () => {
+  const text = userInput.value.trim();
+  if (!text) return;
+
+  addMessage(text, "user");
+  userInput.value = "";
+
+  setTimeout(() => {
+    const result = searchKnowledge(text);
+
+    if (result) {
+      const answer =
+        currentLang === "ar" ? result.answer_ar : result.answer_en;
+
+      addMessage(
+        `${answer}<br><small>Source: ${result.source} – ${result.reference}</small>`,
+        "assistant"
+      );
+    } else {
+      addMessage(
+        currentLang === "ar"
+          ? "لا يوجد مرجع مطابق لهذا السؤال ضمن النطاق الحالي."
+          : "No matching reference found in the selected scope.",
+        "assistant"
+      );
+    }
+  }, 500);
+});
