@@ -6,38 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+  <div class="background"></div>
 
-<div class="app">
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        FireSpec <span>AI</span>
+      </div>
+      <div class="lang-toggle">AR</div>
+      <p class="tagline">Fire systems knowledge. Structured. Verified.</p>
+    </header>
 
-  <header>
-    <div class="logo">FireSpec <span>AI</span></div>
-    <div class="toggle">
-      <button id="langToggle">AR</button>
+    <div class="scope">
+      <button class="active">Egypt</button>
+      <button>Saudi</button>
+      <button>International</button>
     </div>
-    <p class="tagline">Fire systems knowledge. Structured. Verified.</p>
-  </header>
 
-  <section class="scope">
-    <button data-scope="egypt" class="active">Egypt</button>
-    <button data-scope="saudi">Saudi</button>
-    <button data-scope="international">International</button>
-  </section>
-
-  <section id="chat" class="chat">
-    <div class="message assistant">
-      Ask about fire alarm, firefighting systems, or standards.
+    <div class="chat-box" id="chat">
+      <div class="message assistant">
+        Ask about fire alarm, firefighting systems, or standards.
+      </div>
     </div>
-  </section>
 
-  <footer>
-    <input id="userInput" placeholder="Ask FireSpec…" />
-    <button id="sendBtn">Send</button>
-  </footer>
+    <div class="input-area">
+      <input type="text" placeholder="Ask FireSpec..." />
+      <button>Send</button>
+    </div>
+  </div>
 
-</div>
-
-<script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
-
