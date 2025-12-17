@@ -1,1 +1,33 @@
+{
+  "en": {
+    "direction": "ltr",
+    "app_name": "FireSpec AI",
+    "tagline": "Fire systems knowledge. Structured. Verified.",
+    "scope_title": "Standard Scope",
+    "scopes": {
+      "egypt": "Egypt",
+      "saudi": "Saudi Arabia",
+      "international": "International"
+    },
+    "welcome": "Ask about fire alarm, firefighting systems, or applicable standards.",
+    "placeholder": "Ask FireSpec about fire systems, codes, or standards...",
+    "send": "Send",
+    "no_result": "No reference found for your question in the selected scope."
+  },
 
+  "ar": {
+    "direction": "rtl",
+    "app_name": "فاير سبيك AI",
+    "tagline": "معرفة أنظمة الحريق. منظمة. موثوقة.",
+    "scope_title": "نطاق المعايير",
+    "scopes": {
+      "egypt": "مصر",
+      "saudi": "السعودية",
+      "international": "دولي"
+    },
+    "welcome": "اسأل عن أنظمة إنذار أو إطفاء الحريق أو المعايير المعتمدة.",
+    "placeholder": "اسأل فاير سبيك عن أنظمة الحريق أو الأكواد والمعايير...",
+    "send": "إرسال",
+    "no_result": "لا يوجد مرجع مطابق لسؤالك ضمن النطاق المختار."
+  }
+}
