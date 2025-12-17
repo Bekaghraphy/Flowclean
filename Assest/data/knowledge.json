@@ -1,9 +1,29 @@
 [
   {
     "scope": "international",
+    "system": "fire_alarm",
+    "keywords": ["smoke detector", "detector spacing", "nfpa 72"],
+    "answer_en": "According to NFPA 72, smoke detector spacing depends on ceiling height and detector type.",
+    "answer_ar": "طبقًا لـ NFPA 72، تباعد كواشف الدخان يعتمد على ارتفاع السقف ونوع الكاشف.",
+    "source": "NFPA 72 (2022)",
+    "reference": "Section 17.7"
+  },
+  {
+    "scope": "saudi",
+    "system": "fire_alarm",
+    "keywords": ["approval", "civil defense", "saudi fire alarm"],
+    "answer_en": "Fire alarm systems in Saudi Arabia must be approved by Civil Defense before commissioning.",
+    "answer_ar": "أنظمة إنذار الحريق في السعودية يجب اعتمادها من الدفاع المدني قبل التشغيل.",
+    "source": "Saudi Civil Defense",
+    "reference": "Fire Safety Requirements"
+  },
+  {
+    "scope": "egypt",
     "system": "sprinkler",
-    "source": "NFPA 13",
-    "page": 42,
-    "text": "The minimum water supply duration shall be determined based on hazard classification."
+    "keywords": ["sprinkler", "water supply", "firefighting"],
+    "answer_en": "Sprinkler systems in Egypt typically follow NFPA standards with local civil defense requirements.",
+    "answer_ar": "أنظمة الرش في مصر غالبًا تتبع معايير NFPA مع متطلبات الحماية المدنية المحلية.",
+    "source": "Egypt Civil Defense",
+    "reference": "Local Practice"
   }
 ]
