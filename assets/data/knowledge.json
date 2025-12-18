@@ -1,32 +1,62 @@
 [
   {
+    "id": "int_fa_001",
     "scope": "international",
     "system": "fire_alarm",
     "keywords": ["smoke detector", "detector spacing", "nfpa 72", "spacing"],
-    "answer_en": "Smoke detector spacing is not a single fixed value; it depends on detector type, ceiling height/geometry, and the applicable standard’s installation rules. Use the relevant section for spacing/placement and document the assumptions.",
-    "answer_ar": "تباعد كواشف الدخان مش رقم ثابت؛ بيختلف حسب نوع الكاشف وارتفاع/شكل السقف وقواعد التركيب في المعيار. ارجع لقسم الـ spacing/placement وثبّت الافتراضات في المستندات.",
+    "answer_en": "Smoke detector spacing is determined by ceiling height, detector type, and installation rules defined by the applicable standard. Spacing values must be reduced for sloped or obstructed ceilings.",
+    "answer_ar": "تباعد كواشف الدخان يعتمد على ارتفاع السقف ونوع الكاشف وقواعد التركيب في المعيار المعتمد. الأسقف المائلة أو المعوقة تتطلب تقليل المسافات.",
     "source": "NFPA 72",
-    "reference": "Detector Placement (reference)",
-    "source_url": ""
+    "reference": "Detector Placement Guidelines"
   },
   {
+    "id": "int_sp_002",
+    "scope": "international",
+    "system": "sprinkler",
+    "keywords": ["sprinkler spacing", "sprinkler coverage", "nfpa 13"],
+    "answer_en": "Sprinkler spacing and coverage depend on hazard classification, sprinkler type, and ceiling configuration. Maximum spacing is reduced in higher hazard occupancies.",
+    "answer_ar": "تباعد وتغطية الرشاشات يعتمد على تصنيف الخطورة ونوع الرشاش وشكل السقف. الخطورة الأعلى تتطلب مسافات أقل.",
+    "source": "NFPA 13",
+    "reference": "Spacing and Coverage"
+  },
+  {
+    "id": "sa_fa_003",
     "scope": "saudi",
     "system": "fire_alarm",
-    "keywords": ["civil defense", "approval", "saudi", "defense", "اعتماد", "الدفاع المدني"],
-    "answer_en": "In Saudi projects, system acceptance typically requires compliance evidence (drawings/submittals), tests, and authority approval procedures before handover. Maintain a complete commissioning file (ITP, test reports, as-builts).",
-    "answer_ar": "في مشاريع السعودية، الاستلام عادة يعتمد على إثبات الالتزام (رسومات/سوبميتّال) + الاختبارات + إجراءات اعتماد الجهة قبل التسليم. جهّز ملف تشغيل كامل (ITP، تقارير اختبارات، As-Builts).",
+    "keywords": ["civil defense", "approval", "saudi fire alarm", "اعتماد", "الدفاع المدني"],
+    "answer_en": "Fire alarm systems in Saudi Arabia require Civil Defense approval before operation. Approval typically includes design review, site inspection, and functional testing.",
+    "answer_ar": "أنظمة إنذار الحريق في السعودية تتطلب اعتماد الدفاع المدني قبل التشغيل، ويشمل ذلك مراجعة التصميم، المعاينة الميدانية، واختبارات التشغيل.",
     "source": "Saudi Civil Defense",
-    "reference": "Acceptance & Handover (practice)",
-    "source_url": ""
+    "reference": "Fire Safety Approval Process"
   },
   {
+    "id": "sa_comm_004",
+    "scope": "saudi",
+    "system": "commissioning",
+    "keywords": ["commissioning", "testing", "handover", "استلام", "اختبارات"],
+    "answer_en": "Commissioning requires documented testing of all devices, cause-and-effect verification, and submission of as-built drawings before final handover.",
+    "answer_ar": "التشغيل والاستلام يتطلب توثيق اختبارات جميع الأجهزة، مراجعة السبب والنتيجة، وتقديم رسومات As-Built قبل التسليم النهائي.",
+    "source": "Saudi Civil Defense",
+    "reference": "Testing & Commissioning Practice"
+  },
+  {
+    "id": "eg_sp_005",
     "scope": "egypt",
     "system": "sprinkler",
-    "keywords": ["sprinkler", "رشاش", "رشاشات", "water supply", "مدة المياه"],
-    "answer_en": "For sprinkler systems, document hazard classification, water supply arrangement, and testing/commissioning requirements. Align with the adopted standard and confirm any local civil defense conditions for submittals and acceptance.",
-    "answer_ar": "في الرشاشات لازم توثّق تصنيف الخطورة ومصدر/ترتيب المياه ومتطلبات الاختبار والتشغيل. التزم بالمعيار المعتمد وتأكد من شروط الحماية المدنية المحلية للسوبميتّال والاستلام.",
+    "keywords": ["sprinkler", "water supply", "firefighting", "رشاشات", "مصدر المياه"],
+    "answer_en": "Sprinkler systems in Egypt commonly follow international standards with additional local civil defense requirements regarding water supply duration and pump redundancy.",
+    "answer_ar": "أنظمة الرشاشات في مصر غالبًا تتبع المعايير الدولية مع متطلبات محلية إضافية خاصة بمدة مصدر المياه وتكرار المضخات.",
     "source": "Egypt Civil Defense",
-    "reference": "Local acceptance practice",
-    "source_url": ""
+    "reference": "Local Firefighting Practice"
+  },
+  {
+    "id": "eg_pump_006",
+    "scope": "egypt",
+    "system": "fire_pump",
+    "keywords": ["fire pump", "jockey pump", "مضخة حريق", "جوكي"],
+    "answer_en": "Fire pump installations typically include a main pump, standby pump, and jockey pump to maintain system pressure and ensure reliability.",
+    "answer_ar": "تركيبات مضخات الحريق تشمل عادة مضخة رئيسية، مضخة احتياطية، ومضخة جوكي للحفاظ على الضغط وضمان الاعتمادية.",
+    "source": "Fire Pump Design Practice",
+    "reference": "Typical Arrangement"
   }
 ]
